@@ -31,11 +31,11 @@ table{
 thead{
 	background-color: aqua;
 	border: 1px solid black;
-	width:322px;
+	width:336px;
 }
 
 th{
-	padding: 8px;
+	padding: 9px;
 }
 
 td{

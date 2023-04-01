@@ -41,35 +41,33 @@ export default function Calendar() {
 		return acc;
 	}, []);
 
-	return (
+	return <>
 		<div className="calendar">
 			<Header currentDate={currentDate} setCurrentDate={setCurrentDate} />
-			<div>
-				<table>
-					<thead>
-						<tr>
-							<th>Mon</th>
-							<th>Tue</th>
-							<th>Wen</th>
-							<th>Thu</th>
-							<th>Fri</th>
-							<th>Sat</th>
-							<th>Sun</th>
+			<table>
+				<thead>
+					<tr>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wen</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+						<th>Sun</th>
+					</tr>
+				</thead>
+				<tbody>
+					{weeks.map((week) => (
+						<tr key={week[0].getDate()}>
+							{week.map((day) => (
+								<td key={day.getDate()}><Day date={day} /></td>
+							))}
 						</tr>
-					</thead>
-					<tbody>
-						{weeks.map((week) => (
-							<tr key={week[0].getDate()}>
-								{week.map((day) => (
-									<td key={day.getDate()}><Day date={day} /></td>
-								))}
-							</tr>
-						))}
-					</tbody>
-				</table>
-			</div>
+					))}
+				</tbody>
+			</table>
 		</div>
-	);
+	</>;
 };
 
 

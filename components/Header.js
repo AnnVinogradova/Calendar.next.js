@@ -12,7 +12,7 @@ export default function Header({ currentDate, setCurrentDate }) {
 		setCurrentDate(newDate);
 	};
 
-	return (
+	return <>
 		<div className="header">
 			<h1>Calendar</h1>
 			<button onClick={prevMonth}>Prev</button>
@@ -22,7 +22,7 @@ export default function Header({ currentDate, setCurrentDate }) {
 			</h2>
 			<button onClick={nextMonth}>Next</button>
 		</div>
-	);
+	</>;
 };
 
 
