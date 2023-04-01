@@ -1,0 +1,43 @@
+body{
+	display: flex;
+    justify-content: center;
+	background-color: antiquewhite;
+}
+
+h1{
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	margin: 14px;
+	width: 86px;
+	background-color: brown;
+}
+
+table{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	border: 1px solid black;
+}
+
+.header{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+thead{
+	background-color: aqua;
+	border: 1px solid black;
+	width:322px;
+}
+
+th{
+	padding: 8px;
+}
+
+td{
+	padding: 12px;
+}
