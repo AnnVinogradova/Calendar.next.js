@@ -1,7 +1,7 @@
-import Calendar from "../components/Calendar"
+import MonthPicker from "../components/MonthPicker"
 export default function HomePage() {
 	return <>
-		<Calendar />
+		<MonthPicker />
 	</>
 
 
