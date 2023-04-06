@@ -1,6 +1,6 @@
 export default function MonthCalendar({ month }) { 
 	const daysInMonth = new Date(month.getFullYear(), month.getMonth() + 1, 0).getDate(); 
-	const startDay = new Date(month.getFullYear(), month.getMonth(), 0).getDay() +6; 
+	const startDay = new Date(month.getFullYear(), month.getMonth(), 0).getDay(); 
 	const weeks = Math.ceil((daysInMonth + startDay) / 7); 
 	
 	const renderDays = () => { 
